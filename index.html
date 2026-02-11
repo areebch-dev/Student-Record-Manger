@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Manager</title>
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Font CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main Title -->
+    <h1><i class="fa fa-graduation-cap"></i> Student Record Manager</h1>
+    <!-- Form Section -->
+    <div class="container">
+        <form id="studentForm">
+            <label for="stdName">Student Name:</label>
+            <input type="text" id="stdName" placeholder="Enter Student Name">
+            <div class="error" id="stdNameErr"></div>
+
+            <label for="fName">Father Name:</label>
+            <input type="text" id="fName" placeholder="Enter Father Name">
+            <div class="error" id="fNameErr"></div>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter Age">
+            <div class="error" id="ageErr"></div>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" placeholder="Enter Class (e.g., 10th Grade)">
+            <div class="error" id="classErr"></div>
+
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="error" id="genErr"></div>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" placeholder="Enter ">
+            <div class="error" id="dobErr"></div>
+
+            <label for="phone">Phone #:</label>
+            <input type="tel" id="phone" placeholder="e.g., 0300-1234567">
+            <div class="error" id="phoneErr"></div>
+
+            <div class="buttons">
+                <button type="submit" class="submit-btn"><i class="fa-solid fa-plus"></i> Add Record</button>
+                <button type="button" class="clear-btn"><i class="fa-solid fa-broom"></i> Clear Form</button>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Table Section -->
+    <h1 class="list_title">Student Record List</h1>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>Age</th>
+                <th>Class</th>
+                <th>DOB</th>
+                <th>Phone</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>              
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+    <!-- JS Link -->
+    <script src="ajx.js"></script>
+</body>
+</html>
