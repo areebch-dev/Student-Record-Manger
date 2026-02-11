@@ -31,7 +31,7 @@ To run this project locally:
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/student-record-manager.git
+   git clone https://github.com/areebch-dev/Student-Record-Manger.git
 2. Open index.html in your preferred browser
   ```bash
         start index.html
